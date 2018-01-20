@@ -1,0 +1,11 @@
+// IWebAidlCallback.aidl
+package com.cxmax.webprogress;
+
+// Declare any non-default types here with import statements
+
+interface IWebAidlCallback {
+
+    // aidl调用后异步回调的接口
+    // responseCode 分为：成功 1， 失败 0. 失败时response返回{"code": 1, "message":"error message"}
+    void onResult(int responseCode, String actionName, String response);
+}
