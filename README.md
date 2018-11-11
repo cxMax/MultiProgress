@@ -3,8 +3,24 @@ WebView多进程解决方案
 
 ## webview的问题以及解决方案 :
 1. 内存泄漏 , 使用多进程的方式进行处理 :
-* webview多进程开发 : https://www.jianshu.com/p/b66c225c19e2
-* webview多进程demo : https://github.com/xudjx/webprogress
+    *  webview多进程开发 : https://www.jianshu.com/p/b66c225c19e2
+    * webview多进程demo : https://github.com/xudjx/webprogress
+
+## 相关开源项目
+> webview相关
+* FinestWebView-Android : https://github.com/TheFinestArtist/FinestWebView-Android
+* Android-AdvancedWebView : https://github.com/delight-im/Android-AdvancedWebView
+
+> JsBridge相关
+* JsBridge : https://github.com/lzyzsd/JsBridge
+* JsBridge : https://github.com/pengwei1024/JsBridge
+* JsBridge :
+
+
+## 相关blog
+* 如何设计一个优雅健壮的Android WebView ? (上): https://juejin.im/post/5a94f9d15188257a63113a74
+* 如何设计一个优雅健壮的Android WebView ? (下): https://juejin.im/post/5a94fb046fb9a0635865a2d6
+* JsBridge 实现 JavaScript 和 Java 的互相调用 : https://juejin.im/entry/573534f82e958a0069b27646
 
 
 ## License
