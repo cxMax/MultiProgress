@@ -20,6 +20,7 @@ WebView多进程解决方案
 * JsBridge : https://github.com/lzyzsd/JsBridge
 * JsBridge : https://github.com/pengwei1024/JsBridge
 * JsBridge : https://github.com/hiphonezhu/JsBridge 改造后的lzyzsd/JsBridge
+* safe-java-js-webview-bridge : https://github.com/pedant/safe-java-js-webview-bridge
 
 ## 相关blog
 * 如何设计一个优雅健壮的Android WebView ? (上): https://juejin.im/post/5a94f9d15188257a63113a74
