@@ -32,8 +32,8 @@ WebView多进程解决方案
 * webview漏洞 ： https://www.jianshu.com/p/3a345d27cd42
 
 ## License
-   Copyright (C) cxMax
-   Copyright (C) MultiProgress
+   Copyright (C) cxMax  
+   Copyright (C) MultiProgress  
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
