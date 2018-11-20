@@ -37,7 +37,7 @@ Android WebView使用相关集成
 > webview cache相关
 * https://github.com/Carson-Ho/Webview_Cache 
 * https://github.com/NEYouFan/ht-candywebcache-android
-> webview 
+> webview dns
 * https://github.com/aliyun/alicloud-android-demo/tree/master/httpdns_android_demo
 * https://github.com/tencentyun/httpdns-android-sdk 
 > webview 独立进程 
