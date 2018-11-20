@@ -1,5 +1,5 @@
-## MultiProgress
-WebView多进程解决方案
+## SafeWebView
+Android WebView使用相关集成
 
 ## webview的问题以及解决方案 :
 1. 内存泄漏 , 使用多进程的方式进行处理 :
