@@ -1,1 +1,1 @@
-include ':app', ':webprogress', ':jsbridge'
+include ':app', ':webprogress', ':webview'
