@@ -47,7 +47,7 @@ public class HoxWebView extends WebView {
     }
 
     private void initWebViewClient() {
-        setWebViewClient(new WebViewClient(){
+        setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
                 JsBridgeImpl.getInstance().injectJs(view);
@@ -57,7 +57,7 @@ public class HoxWebView extends WebView {
     }
 
     private void initWebChromeClient() {
-        setWebChromeClient(new WebChromeClient(){
+        setWebChromeClient(new WebChromeClient() {
             @Override
             public boolean onJsPrompt(WebView view, String url, String message, String defaultValue, JsPromptResult result) {
                 if (JsBridgeImpl.getInstance().callJsPrompt(message, result)) {
