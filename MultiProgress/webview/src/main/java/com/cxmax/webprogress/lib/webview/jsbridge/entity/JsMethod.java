@@ -2,13 +2,15 @@ package com.cxmax.webprogress.lib.webview.jsbridge.entity;
 
 import android.support.annotation.NonNull;
 
+import com.cxmax.webprogress.lib.webview.jsbridge.annotation.JsInterface;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 /**
- * @describe : the method which annotated by {@link com.tap4fun.hox.bussiness.webview.jsbridge.annotation.JsInterface}
+ * @describe : the method which annotated by {@link JsInterface}
  * @usage :
  * <p>
  * </p>

@@ -3,8 +3,8 @@ package com.cxmax.webprogress.lib.webview.jsbridge;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsModule;
-import com.tap4fun.hox.libcommon.Constants;
+
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsModule;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -39,7 +39,7 @@ public class JsBridgeConfig {
     }
 
     @NonNull public String getProtocol() {
-        return TextUtils.isEmpty(protocol) ? Constants.WebView.DEFAULT_JSBRIDGE_PROTOCOL : protocol;
+        return TextUtils.isEmpty(protocol) ? "JsBridge" : protocol;
     }
 
     public void setProtocol(String protocol) {

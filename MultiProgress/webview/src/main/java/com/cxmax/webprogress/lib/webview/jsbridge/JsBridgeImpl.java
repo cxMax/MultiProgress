@@ -3,17 +3,18 @@ package com.cxmax.webprogress.lib.webview.jsbridge;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
+import android.util.Log;
 import android.webkit.JsPromptResult;
 import android.webkit.WebView;
 
-import com.tap4fun.hox.bussiness.webview.jsbridge.annotation.JsInterface;
-import com.tap4fun.hox.bussiness.webview.jsbridge.compile.JsArgumentParser;
-import com.tap4fun.hox.bussiness.webview.jsbridge.compile.ParserUtil;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsArgumentType;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsMethod;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsModule;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsStaticModule;
-import com.tap4fun.hox.libcommon.LogUtil;
+
+import com.cxmax.webprogress.lib.webview.jsbridge.annotation.JsInterface;
+import com.cxmax.webprogress.lib.webview.jsbridge.compile.JsArgumentParser;
+import com.cxmax.webprogress.lib.webview.jsbridge.compile.ParserUtil;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsArgumentType;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsMethod;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsModule;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsStaticModule;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -142,7 +143,6 @@ public class JsBridgeImpl implements IJsBridge {
                             setJsPromptResult(result, true, ret == null ? "" : ret);
                         } catch (Exception e) {
                             setJsPromptResult(result, false, "Error: " + e.toString());
-                            LogUtil.e("Call JsMethod <" + jsMethod.getMethodName() + "> Error", e);
                         }
                         return true;
                     }
