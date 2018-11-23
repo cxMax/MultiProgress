@@ -66,6 +66,7 @@ public class HoxWebView extends WebView {
                 return super.onJsPrompt(view, url, message, defaultValue, result);
             }
         });
+
     }
 
     private void initWebSettings(Context context) {
