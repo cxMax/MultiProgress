@@ -1,7 +1,5 @@
 package com.cxmax.webprogress.lib.webview.jsbridge.entity;
 
-import com.tap4fun.hox.libcommon.Constants;
-
 /**
  * @describe :
  * @usage :
@@ -13,6 +11,6 @@ public class JsStaticModule extends JsModule {
 
     @Override
     public final String getModuleName() {
-        return Constants.WebView.STATIC_METHOD_NAME;
+        return "@static";
     }
 }

@@ -1,6 +1,7 @@
 package com.cxmax.webprogress.lib.webview.jsbridge.jsparams;
 
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsCallback;
+
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsCallback;
 
 import java.util.Set;
 

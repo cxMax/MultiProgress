@@ -2,8 +2,7 @@ package com.cxmax.webprogress.lib.webview.jsbridge.compile;
 
 import android.text.TextUtils;
 
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsArgumentType;
-import com.tap4fun.hox.libcommon.LogUtil;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsArgumentType;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -122,7 +121,6 @@ public class JsArgumentParser {
             }
             parser.setParameters(parameterList);
         } catch (Exception e) {
-            LogUtil.e("JBArgumentParser::parse Exception", e);
         }
         return parser;
     }

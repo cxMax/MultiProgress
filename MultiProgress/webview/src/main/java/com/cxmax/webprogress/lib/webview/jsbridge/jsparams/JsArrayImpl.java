@@ -1,8 +1,9 @@
 package com.cxmax.webprogress.lib.webview.jsbridge.jsparams;
 
-import com.tap4fun.hox.bussiness.webview.jsbridge.compile.ParserUtil;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsArgumentType;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsCallback;
+
+import com.cxmax.webprogress.lib.webview.jsbridge.compile.ParserUtil;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsArgumentType;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsCallback;
 
 import org.json.JSONArray;
 import org.json.JSONException;

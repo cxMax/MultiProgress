@@ -6,11 +6,22 @@ import android.support.annotation.UiThread;
 import android.text.TextUtils;
 import android.webkit.WebView;
 
-import com.tap4fun.hox.bussiness.webview.jsbridge.annotation.JsInterface;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsArgumentType;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsCallbackImpl;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsMethod;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsModule;
+import com.cxmax.webprogress.lib.webview.jsbridge.annotation.JsInterface;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsArgumentType;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsCallback;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsCallbackImpl;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsMethod;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsModule;
+import com.cxmax.webprogress.lib.webview.jsbridge.entity.JsRunMethodFactory.*;
+import com.cxmax.webprogress.lib.webview.jsbridge.jsparams.JsArray;
+import com.cxmax.webprogress.lib.webview.jsbridge.jsparams.JsMap;
+import com.cxmax.webprogress.lib.webview.jsbridge.jsparams.JsObject;
+import com.cxmax.webprogress.lib.webview.jsbridge.jsparams.WritableJsArray;
+import com.cxmax.webprogress.lib.webview.jsbridge.jsparams.WritableJsMap;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -20,18 +31,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsRunMethodFactory.*;
-import com.tap4fun.hox.bussiness.webview.jsbridge.jsparams.JsArray;
-import com.tap4fun.hox.bussiness.webview.jsbridge.entity.JsCallback;
-import com.tap4fun.hox.bussiness.webview.jsbridge.jsparams.JsMap;
-import com.tap4fun.hox.bussiness.webview.jsbridge.jsparams.JsObject;
-import com.tap4fun.hox.bussiness.webview.jsbridge.jsparams.WritableJsArray;
-import com.tap4fun.hox.bussiness.webview.jsbridge.jsparams.WritableJsMap;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 /**
@@ -43,7 +42,7 @@ import org.json.JSONObject;
  */
 public class ParserUtil {
 
-    private static List<Class> validParameterList = Arrays.asList(Integer.class, Float.class, Double.class, String.class,
+    private static List<Class<?>> validParameterList = Arrays.asList(Integer.class, Float.class, Double.class, String.class,
             Boolean.class, JsCallback.class, JsMap.class, JsArray.class,
             int.class, float.class, double.class, boolean.class);
 

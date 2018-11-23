@@ -3,9 +3,9 @@ package com.cxmax.webprogress.lib.webview.jsbridge.entity;
 import android.support.annotation.NonNull;
 import android.support.annotation.UiThread;
 import android.text.TextUtils;
-import android.webkit.WebView;
 
-import com.tap4fun.hox.bussiness.webview.jsbridge.compile.ParserUtil;
+import com.cxmax.webprogress.lib.webview.jsbridge.compile.ParserUtil;
+
 
 /**
  * @describe :
